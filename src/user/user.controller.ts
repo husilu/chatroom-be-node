@@ -6,7 +6,7 @@ import { BusinessException } from 'src/common/exceptions/business.exception';
 
 @Controller('user')
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly userService: UserService, private readonly configService: ConfigService) {}
 
   @Post()
   create(@Body() createUserDto: CreateUserDto) {
