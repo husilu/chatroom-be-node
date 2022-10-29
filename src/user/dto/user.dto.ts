@@ -6,13 +6,13 @@ export class AddUserDto {
 
   @ApiProperty({ example: 'cookie' })
   @IsNotEmpty()
-  name: string;
-
-  @ApiProperty({ example: 'cookieboty@qq.com' })
-  @IsNotEmpty()
-  email: string;
+  nickname: string;
 
   @ApiProperty({ example: 'cookieboty' })
   @IsNotEmpty()
   username: string;
+
+  @ApiProperty({ example: 'cookieboty' })
+  @IsNotEmpty()
+  password: string;
 }
